@@ -1,0 +1,21 @@
+<table class = "table table-striped">
+  <thead>
+    <tr>
+      <th> Name </th>
+      <th> Country Code </th>
+      <th> Year </th>
+      <th> Population </th>
+      <th> GDP </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor = "let countryWithMaxRatio of countriesWithMaxRatio" >
+      <td>{{countryWithMaxRatio.country.name}}</td>
+      <td>{{countryWithMaxRatio.country.countryCode3}}</td>
+      <td>{{countryWithMaxRatio.year}}</td>
+      <td>{{countryWithMaxRatio.population}}</td>
+      <td>{{countryWithMaxRatio.gdp}}</td>
+    </tr>
+  </tbody>
+</table>
+

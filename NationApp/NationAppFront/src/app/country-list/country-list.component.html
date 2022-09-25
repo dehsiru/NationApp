@@ -1,0 +1,19 @@
+<h2> Country List</h2>
+<table class = "table table-striped">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Area</th>
+      <th>Country Code</th>
+      <th>Language(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor = "let country of countries">
+      <td> {{ country.name}} </td>
+      <td> {{ country.area}} </td>
+      <td> {{ country.countryCode2}} </td>
+      <td><button type="button" (click)="findCountryLanguages(country.id)"> Check </button></td>
+    </tr>
+  </tbody>
+</table>
